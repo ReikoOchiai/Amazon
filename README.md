@@ -92,3 +92,12 @@ Amazon Clone website
 9. npm start
 10. npm install axios
 11. change fetch to axios in HomeScreen
+
+"Install Babel for ES6 Syntax"
+
+1. npm intall -D babel core, cli, node, preset-ev
+2. Create .babelrc and set presets to @babel/preset-env
+3. npm intall -D nodemon
+4. set start: nodemon --watch backend --exec babel-node backend/ server.js
+5. convert require to import in server.js
+6. npm start
