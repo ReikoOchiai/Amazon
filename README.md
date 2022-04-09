@@ -101,3 +101,28 @@ Amazon Clone website
 4. set start: nodemon --watch backend --exec babel-node backend/ server.js
 5. convert require to import in server.js
 6. npm start
+
+"Enable Code Linting"
+
+1. npm intall -D eslint
+2. install VSCode eslint extension
+3. create .eslintrc and set module.exports for env to node
+4. set VSCode setting for editor.codeActionsOnSace source.fixAll.eslint to true
+5. check result for linting error
+6. npm intall eslint-config-airbnb-base and eslint-plugin-import
+7. set extends to airbnb-base
+8. set parserOptions to ecmaVersion 11 and sourceType to module
+9. set rules for no-console to 0 to ignore linting error
+
+"Create Rating Component"
+
+1. create components/Rating.js
+2. create div.rating
+3. link to fontawesome.css in index.html
+4. define Rating object with render()
+5. if !props.value return empty div
+6. else use fa fa-star, fa-star-half-o and fa-star-o
+7. last span for props.text || ''
+8. style div.rating, span and last span
+9. edit HomeScreen
+10. add div.product-rating and use Rating component
